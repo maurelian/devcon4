@@ -157,7 +157,9 @@ Now things will get serious! We'll take the attacker's side and exploit a simila
 
 ### Exercise 2 - Cheating on CTFs with Mythril Classic
 
-Mythril Classic has a few extra tricks up its sleeve. In the [second exercise](https://github.com/ConsenSys/devcon4-playground/tree/master/exercise2), we'll look at a the `Tokensale` contract from [CaptureTheEther](https://capturetheether.com/challenges/math/token-whale/). The source code of that contract is in the `exercise2` directory. The question is, does it have any vulnerabilities? Let's do a quick Mythril Classic run to find out:
+Mythril Classic has a few extra tricks up its sleeve. In the [second exercise](https://github.com/ConsenSys/devcon4-playground/tree/master/exercise2), we'll look at the `Tokensale` contract from [CaptureTheEther](https://capturetheether.com/challenges/math/token-whale/). The source code of that contract is in the `exercise2` directory. 
+
+The question is, does it have any vulnerabilities? Let's do a quick Mythril Classic run to find out:
 
 ```
 $ myth -x exercise2/contracts/Tokensale.sol
@@ -201,7 +203,9 @@ $ myth -x exercise4/contracts/Ownable.sol --max-transaction-count 2 --verbose-re
 
 Again, the `--verbose-report` will give you the transaction sequence for triggering the bug - take a good look at the output!
 
-Now the real fun starts: We'll deploy a real-world contract instance with a similar vulnerability. Whoever exploits it first is not only awesome, but also wins 0.1337 ETH for buying Pizza (or hodl). Tip: You can run Mythril Classic against an on-chain contract using the `-a` flag.
+Now the real fun starts: We'll deploy a real-world contract instance with a similar vulnerability. Whoever exploits it first is not only awesome, but also wins 0.1337 ETH for buying Pizza (or hodl).
+
+Tip: You can run Mythril Classic against an on-chain contract using the `-a` flag.
 
 ### Exercise 5 - Verifying Invariants Using Asserts
 
@@ -241,7 +245,7 @@ As you can see, in this case three transactions need to be sent in the correct o
 
 ## What to Do Next
 
-- Solve the other challenges on CaptureTheEther and Security Innovation CTF
+- Solve the other challenges on [CaptureTheEther](https://capturetheether.com/) and [Security Innovation CTF](https://blockchain-ctf.securityinnovation.com)
 - Major Mythril Platform CTF soon
 - Beta launch on first of December
 - MYTH token launch in early 2019
